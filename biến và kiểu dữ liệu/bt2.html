@@ -43,15 +43,15 @@
                 c = document.getElementById('nuoc2').value
                 if ( b == 'vn' && c == 'usd'){
                     d = a / 23000
-                    alert(d)
+                    document.write('số tiền là: ' +d+ 'usd')
                 }
                 if ( b == 'usd' && c == 'vn'){
                     d = a * 23000
-                    alert(d)
+                    document.write('số tiền là: ' +d+ 'vnd')
                 }
                 if ( (b == 'vn' && c == 'vn') || (b == 'usd' && c == 'usd') ){
                     d = a * 23000
-                    alert(a)
+                    document.write('số tiền là: ' +a)
                 }
            })
         </script>

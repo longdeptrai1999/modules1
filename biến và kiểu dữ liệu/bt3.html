@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Máy Tính Tay</h1>
+    <form action="">
+        <input type="text" name="" id="1">
+        <input type="text" name="" id="2"> <br> <br>
+        <button id="cong">cộng</button>
+        <button id="tru">trừ</button>
+        <button id="nhan">nhân</button>
+        <button id="chia">chia</button>
+        <script>
+
+            document.getElementById('cong').addEventListener('click', function () {
+                var a = document.getElementById('1').value
+                a = parseInt(a)
+                var b = document.getElementById('2').value
+                b = parseInt(b)
+                c = a + b
+                document.write('kết quả là: ' +c)
+            })
+            document.getElementById('tru').addEventListener('click', function () {
+                var a = document.getElementById('1').value
+                a = parseInt(a)
+                var b = document.getElementById('2').value
+                b = parseInt(b)
+                c = a - b
+                document.write('kết quả là: ' + c)
+            })
+            document.getElementById('nhan').addEventListener('click', function () {
+                var a = document.getElementById('1').value
+                a = parseInt(a)
+                var b = document.getElementById('2').value
+                b = parseInt(b)
+                c = a * b
+                document.write('kết quả là: ' + c)
+            })
+            document.getElementById('chia').addEventListener('click', function () {
+                var a = document.getElementById('1').value
+                a = parseInt(a)
+                var b = document.getElementById('2').value
+                b = parseInt(b)
+                c = a / b
+                document.write('kết quả là: ' + c)
+            })
+        </script>
+    </form>
+</body>
+
+</html>
