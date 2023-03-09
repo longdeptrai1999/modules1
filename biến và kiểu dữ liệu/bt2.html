@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="">
+        <tr>
+            <th>Amount</th>
+            <th>From Curency</th>
+            <th>To Curency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name=""  id="sotien">
+            </td>
+            <td>
+                <select name="" id="nuoc">
+                    <option value="vn">Việt Nam</option>
+                    <option value="usd">USD</option>
+
+                </select>
+            </td>
+            <td>
+                <select name="" id="nuoc2">
+                    <option value="usd">USD</option>
+                    <option value="vn">Việt Nam</option>
+                </select>
+            </td>
+            <td>
+                <button id="bam">convert</button>
+            </td>
+        </tr>
+        <script>
+           document.getElementById('bam').addEventListener('click',function(){
+                a = document.getElementById('sotien').value
+                a = parseInt(a)
+                b = document.getElementById('nuoc').value
+                c = document.getElementById('nuoc2').value
+                if ( b == 'vn' && c == 'usd'){
+                    d = a / 23000
+                    alert(d)
+                }
+                if ( b == 'usd' && c == 'vn'){
+                    d = a * 23000
+                    alert(d)
+                }
+                if ( (b == 'vn' && c == 'vn') || (b == 'usd' && c == 'usd') ){
+                    d = a * 23000
+                    alert(a)
+                }
+           })
+        </script>
+    </table>
+</body>
+</html>
